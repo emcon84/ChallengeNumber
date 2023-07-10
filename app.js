@@ -1,6 +1,6 @@
 const prompt = require('prompt-sync')();
 
-function obtenerArregloBits(n) {
+function arrayBits(n) {
     const binary = n.toString(2);
     console.log('Binario ->', binary)
     const bits = Array.from(binary);
@@ -18,5 +18,5 @@ function obtenerArregloBits(n) {
 
 // Solicitar entrada del usuario
 const numero = parseInt(prompt('Ingrese un número entero: '));
-const arregloBits = obtenerArregloBits(numero);
+const arregloBits = arrayBits(numero);
 console.log('Arreglo de bits:', arregloBits);
